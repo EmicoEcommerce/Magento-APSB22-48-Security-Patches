@@ -22,7 +22,7 @@ We think the cause could be issues with nested CMS directives in Magento 2 and c
 
 ## Installation
 
-Use a package such as [Composer Patches](https://github.com/cweagans/composer-patches) to apply the correct patch file to your Magento shop.
+Use a package such as [cweagans/composer-patches](https://github.com/cweagans/composer-patches) or [vaimo/composer-patches](https://github.com/vaimo/composer-patches) to apply the correct patch file to your Magento shop.
 The patches are to be applied to the `magento/framework` and `magento/module-customer` package.
 The correct patch file can be found within the folder corresponding to your Magento 2 version.
 
