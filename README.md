@@ -13,11 +13,10 @@ To create these patch files we've tried our best to inspect the [2.4.4-p1...2.4.
 As of now the patch only applies a few fixes in the `Magento/Framework/Filter` namespace which have been extracted from the following commit: [Patch Commit](https://github.com/magento/magento2/commit/11846a1a10539470f2fe1522030ff42d62daa562#diff-adf392bf8e6a1c22dc920c482055f9611acb6b8d5940397d5281e53354230ed8)
 While inspecting this commit there also seem to be a lot of fixes in the `Magento/Customer` module, we're currently working on applying these changes aswell.
 
-
 ## Installation
 
 Use a package such as [Composer Patches](https://github.com/cweagans/composer-patches) to apply the correct patch file to your Magento shop.
-The patches are to be applied to the `magento/framework` package.
+The patches are to be applied to the `magento/framework` and `magento/customer` package.
 The correct patch file can be found within the folder corresponding to your Magento 2 version.
 
 ## Contributing
