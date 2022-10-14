@@ -16,7 +16,7 @@ While inspecting this commit there also seem to be a lot of fixes in the `Magent
 ## Installation
 
 Use a package such as [Composer Patches](https://github.com/cweagans/composer-patches) to apply the correct patch file to your Magento shop.
-The patches are to be applied to the `magento/framework` and `magento/customer` package.
+The patches are to be applied to the `magento/framework` and `magento/module-customer` package.
 The correct patch file can be found within the folder corresponding to your Magento 2 version.
 
 ## Contributing
