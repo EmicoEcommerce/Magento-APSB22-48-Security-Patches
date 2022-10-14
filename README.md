@@ -19,3 +19,7 @@ While inspecting this commit there also seem to be a lot of fixes in the `Magent
 Use a package such as [Composer Patches](https://github.com/cweagans/composer-patches) to apply the correct patch file to your Magento shop.
 The patches are to be applied to the `magento/framework` package.
 The correct patch file can be found within the folder corresponding to your Magento 2 version.
+
+## Contributing
+
+Feel free to create missing patch files for your Magento 2 version and create a Pull Request!
