@@ -13,9 +13,12 @@ To create these patch files we've tried our best to inspect the [2.4.4-p1...2.4.
 As of now the patch only applies a few fixes in the `Magento/Framework/Filter` namespace which have been extracted from the following commit: [Patch Commit](https://github.com/magento/magento2/commit/11846a1a10539470f2fe1522030ff42d62daa562#diff-adf392bf8e6a1c22dc920c482055f9611acb6b8d5940397d5281e53354230ed8)
 While inspecting this commit there also seem to be a lot of fixes in the `Magento/Customer` module, we're currently working on applying these changes aswell.
 
-The customer patch applies a fix to the Webapi for Customer creation and Customer Confirmation Controller.
+The `magento/module-customer` patch applies a fix to the Webapi for Customer creation and Customer Confirmation Controller.
 - The Webapi patch fixes an issue where it used to be possible to send multiple keys with different capitalized key fields thus possibly ignoring any validation made by Magento.
 - The Confirmation Controller is changed to cast the `id` param to an integer.
+
+The `magento/framework` patch applies a fix to the CMS template directive parsing, a signature is added and a depth check.
+We think the cause could be issues with nested CMS directives in Magento 2 and certain customer data being exposed to a XSS attack.
 
 ## Installation
 
