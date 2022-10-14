@@ -15,7 +15,7 @@ While inspecting this commit there also seem to be a lot of fixes in the `Magent
 
 The `magento/module-customer` patch applies a fix to the Webapi for Customer creation and Customer Confirmation Controller.
 - The Webapi patch fixes an issue where it used to be possible to send multiple keys with different capitalized key fields thus possibly ignoring any validation made by Magento.
-- The Confirmation Controller is changed to cast the `id` param to an integer.
+- The Confirmation Controller is changed to cast a `id` POST parameter to an integer.
 
 The `magento/framework` patch applies a fix to the CMS template directive parsing, a signature is added and a depth check.
 We think the cause could be issues with nested CMS directives in Magento 2 and certain customer data being exposed to a XSS attack.
