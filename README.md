@@ -26,6 +26,13 @@ Use a package such as [cweagans/composer-patches](https://github.com/cweagans/co
 The patches are to be applied to the `magento/framework` and `magento/module-customer` package.
 The correct patch file can be found within the folder corresponding to your Magento 2 version.
 
+Make sure to include the email, customer and framework patch. The email patch fixes a change introduced by the security patch which may break email template subjects.
+
+## Trouble shooting content generation errors
+
+The patch changes the way template directives are parsed, this may break certain CMS pages where the content is nested in a Magento 2 translation `__()`.
+When one of these content generation errors occur make sure to remove the redundant `__()` call in your code.
+
 ## Contributing
 
 Feel free to create missing patch files for your Magento 2 version and create a Pull Request!
