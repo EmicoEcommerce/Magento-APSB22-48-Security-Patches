@@ -1,5 +1,5 @@
 **Official Magento Patches have been released: [Magento Docs](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/adobe-commerce-2.4.0-2.4.5-security-hotfix-for-cve-2022-35698.html?lang=en)
-These patches adress the same security issues as this repository does.**
+These patches adress the same security issues as this repository does. Except that we've added a few fixes to older Magento versions.**
 
 # Security patches for APSB22-48
 
@@ -12,7 +12,8 @@ To create these patch files we've tried our best to inspect the [2.4.4-p1...2.4.
 ## Contents
 
 As of now the patch only applies a few fixes in the `Magento/Framework/Filter` namespace which have been extracted from the following commit: [Patch Commit](https://github.com/magento/magento2/commit/11846a1a10539470f2fe1522030ff42d62daa562#diff-adf392bf8e6a1c22dc920c482055f9611acb6b8d5940397d5281e53354230ed8)
-While inspecting this commit there also seem to be a lot of fixes in the `Magento/Customer` module, we're currently working on applying these changes aswell.
+
+According to the newly released Magento patches this covers the current security issue. 
 
 The `magento/module-customer` patch applies a fix to the Webapi for Customer creation and Customer Confirmation Controller.
 - The Webapi patch fixes an issue where it used to be possible to send multiple keys with different capitalized key fields thus possibly ignoring any validation made by Magento.
