@@ -28,8 +28,9 @@ The correct patch file can be found within the folder corresponding to your Mage
 
 Make sure to include the email, customer and framework patch. The email patch fixes a change introduced by the security patch which may break email template subjects.
 
-## Trouble shooting content generation errors
+## Troubleshooting
 
+#### An error occurred during content generation
 The patch changes the way template directives are parsed, this may break certain CMS pages where the content is nested in a Magento 2 translation `__()`.
 When one of these content generation errors occur make sure to remove the redundant `__()` call in your code.
 
