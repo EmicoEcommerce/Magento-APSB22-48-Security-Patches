@@ -1,5 +1,5 @@
 **Official Magento Patches have been released: [Magento Docs](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/adobe-commerce-2.4.0-2.4.5-security-hotfix-for-cve-2022-35698.html?lang=en)
-These patches adress the same security issues as this repository does. Except that we've added a few fixes to older Magento versions.**
+These patches address the same security issues as this repository does. Except that we've added a few fixes to older Magento versions.**
 
 # Security patches for APSB22-48
 
